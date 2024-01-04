@@ -1,353 +1,435 @@
 meta {
-    -theme-interface-style: dark;
-    -theme-vibrancy: vibrant;
-    -theme-accent-color: auto;
+	-theme-interface-style: dark;
+	-theme-vibrancy: none;
+	-theme-accent-color: hsl(225, 12%, 13%);
 }
-
 
 /*
  * Window styles
  */
+
 meta.window {
-    border-color: hsla(0, 0%, 100%, 0.1);
+	border-color: hsla(0, 0%, 100%, 0.1);
+	background-color: hsla(218, 13%, 16%, 1);
 }
 meta.titlebar {
-    color: hsl(210, 17%, 76%);
-    border-color: hsla(0, 0%, 0%, 0.6);
+	color: hsl(210, 17%, 76%);
+	background-color: hsl(225, 12%, 13%);
+	border-color: hsla(0, 0%, 0%, 0);
 }
 meta.titlebar.inactive {
 }
 
 meta.button {
-    background: linear-gradient(hsl(210, 5%, 32%), hsl(210, 5%, 25%));
-    border: linear-gradient(hsl(210, 5%, 17%), hsl(210, 5%, 13%));
-    color: white;
+	background: linear-gradient(hsl(210, 5%, 32%), hsl(210, 5%, 25%));
+	border: linear-gradient(hsl(210, 5%, 17%), hsl(210, 5%, 13%));
+	color: white;
 }
 meta.button.highlighted {
-    background: linear-gradient(hsl(210, 5%, 42%), hsl(210, 5%, 34%));
-    color: white;
+	background: linear-gradient(hsl(210, 5%, 42%), hsl(210, 5%, 34%));
+	color: white;
 }
 meta.button.selected {
-    color: white;
+	color: white;
 }
 meta.button.highlighted.selected {
-    color: white;
+	color: white;
 }
 meta.button.disabled {
-    
 }
 
 meta.textfield {
-    background-color: hsl(210, 5%, 13%);
-    border-color: hsl(210, 5%, 23%);
+	background-color: hsl(210, 5%, 13%);
+	border-color: hsl(210, 5%, 23%);
 }
 meta.textfield.highlighted {
-    background-color: hsl(210, 5%, 10%);
-    border-color: hsl(210, 5%, 23%);
+	background-color: hsl(210, 5%, 10%);
+	border-color: hsl(210, 5%, 23%);
 }
 
 /*
  * Document styles
  */
+
 meta.document {
-    background-color: hsl(210, 5%, 11%);
-    border-color: hsla(0, 0%, 100%, 0.1);
+	background-color: hsla(223, 12%, 18%, 1);
+	border-color: hsla(0, 0%, 20%, 0.4);
 }
 
 meta.document.button {
-    background: linear-gradient(hsl(210, 5%, 25%), hsl(210, 5%, 21%));
-    border: linear-gradient(hsl(210, 5%, 11%), hsl(210, 5%, 8%));
+	background: linear-gradient(hsl(210, 5%, 25%), hsl(210, 5%, 21%));
+	border: linear-gradient(hsl(210, 5%, 11%), hsl(210, 5%, 8%));
 }
 meta.document.button.disabled {
-    background: linear-gradient(hsla(220, 5%, 25%, 0.3), hsla(220, 5%, 21%, 0.3));
+	background: linear-gradient(
+		hsla(220, 5%, 25%, 0.3),
+		hsla(220, 5%, 21%, 0.3)
+	);
 }
 meta.document.button.highlighted {
-    background: linear-gradient(hsl(210, 5%, 34%), hsl(210, 5%, 30%));
+	background: linear-gradient(hsl(210, 5%, 34%), hsl(210, 5%, 30%));
 }
 
 meta.document.textfield {
-    background-color: hsl(210, 5%, 10%);
-    border-color: hsl(210, 5%, 19%);
+	background-color: hsl(210, 5%, 10%);
+	border-color: hsl(210, 5%, 19%);
 }
 meta.document.textfield.highlighted {
-    background-color: hsl(210, 5%, 10%);
-    border-color: hsl(210, 5%, 19%);
+	background-color: hsl(210, 5%, 10%);
+	border-color: hsl(210, 5%, 19%);
 }
 
 /* Text */
 meta.text {
-    color: hsl(210, 49%, 90%);
+	color: #d4d4d4;
 }
 meta.text.invisible {
-    color: hsla(210, 100%, 90%, 0.15);
+	color: hsla(210, 100%, 90%, 0.15);
 }
 meta.text.selected {
+	color: hsla(210, 100%, 90%, 0.15);
 }
 
 /* Cursor */
 meta.cursor {
-    background-color: hsl(210, 5%, 15%);
+	background-color: hsla(0, 0%, 0%, 0);
 }
 
 /* Indentation Guides */
 meta.indentguide {
-    border-color: hsla(220, 5%, 48%, 0.2);
+	border-color: hsla(220, 5%, 48%, 0.2);
 }
 
 /* Gutter */
 meta.gutter {
-    color: hsl(210, 5%, 38%);
+	color: hsl(210, 5%, 38%);
 }
 meta.gutter.selected {
-    background-color: hsl(210, 5%, 10%);
-    color: hsl(210, 17%, 76%);
+	background-color: hsl(210, 5%, 10%);
+	color: hsl(210, 17%, 76%);
 }
-
 
 /*
  * Syntax styles
  */
+
 comment {
-    color: hsl(210, 20%, 50%);
+	color: #525252;
 }
 processing {
-    color: hsl(210, 20%, 50%);
+	color: hsl(240, 0%, 45%);
 }
 declaration {
-    color: hsl(210, 20%, 50%);
+	color: hsl(240, 0%, 45%);
 }
 bracket {
-    color: hsl(210, 50%, 70%);
+	color: #d4d4d4;
 }
 operator {
-    color: hsl(210, 50%, 70%);
+	color: hsl(172, 29%, 64%);
 }
 invalid {
-    background-color: hsl(0, 90%, 60%);
-    color: hsl(60, 33%, 96%);
+	background-color: #c16766;
+	color: #d4d4d4;
 }
 link {
-    color: hsl(210, 100%, 70%);
+	color: #a9c59e;
 }
 
 /* Keywords */
 keyword {
-    color: hsl(210, 100%, 70%);
+	color: #7f7f7f;
 }
 keyword.modifier {
-    font-style: italic;
-    color: hsl(190, 85%, 65%);
+	color: #7f7f7f;
 }
 keyword.condition {
-    color: hsl(210, 100%, 70%);
+	color: #82afb1;
 }
 keyword.construct {
-    color: hsl(210, 100%, 70%);
+	color: #82afb1;
 }
 keyword.statement {
-    color: hsl(210, 100%, 70%);
+	color: #82afb1;
 }
 keyword.self {
-    color: hsl(210, 100%, 70%);
+	color: #82afb1;
 }
 keyword.self.prefix {
-    color: hsl(210, 100%, 80%);
+	color: #82afb1;
 }
 
 /* Values */
 value.boolean {
-    color: hsl(210, 100%, 70%);
+	color: #82afb1;
 }
 value.null {
-    color: hsl(210, 100%, 70%);
+	color: #82afb1;
 }
 value.number {
-    color: hsl(45, 50%, 80%);
+	color: #82afb1;
 }
 value.entity {
-    color: hsl(210, 100%, 70%);
+	color: #82afb1;
 }
 value.symbol {
-    color: hsl(210, 100%, 70%);
+	color: #82afb1;
 }
 
 /* Identifiers */
+
 identifier.type {
-    color: hsl(32, 90%, 70%);
+	color: #d4d4d4;
 }
 identifier.constant,
 identifier.global,
 identifier.variable {
-    color: hsl(270, 80%, 80%);
+	color: #b798bf;
 }
+
+identifier.constant {
+	color: #c16766;
+}
+
 identifier.constant.prefix,
-identifier.global.prefix,
-identifier.variable.prefix {
-    color: hsl(240, 100%, 92%);
+identifier.global.prefix {
+	color: #b798bf;
 }
+
+identifier.variable {
+	color: #d4d4d4;
+}
+
 identifier.property {
-    color: hsl(270, 80%, 80%);
+	color: #f0a5ab;
 }
 identifier.property.prefix {
-    color: hsl(240, 100%, 92%);
+	color: #b798bf;
 }
 identifier.decorator,
-identifier.function,
-identifier.method {
-    color: hsl(160, 80%, 55%);
+identifier.function {
+	color: #fee3a9;
 }
+
+identifier.method {
+	color: #7896c3;
+}
+
 identifier.key {
-    color: hsl(270, 80%, 80%);
+	color: #b798bf;
 }
 identifier.argument {
-    color: hsl(270, 80%, 80%);
+	color: #d4d4d4;
 }
 identifier.argument.prefix {
-    color: hsl(240, 100%, 92%);
+	color: #b798bf;
 }
 
 /* Strings */
+
 string {
-    color: hsl(5, 80%, 65%);
+	color: #a9cfa4;
 }
 string.delimiter {
-    color: hsl(5, 80%, 60%);
+	color: #a9cfa4;
 }
 string.escape {
-    color: hsl(5, 80%, 80%);
+	color: #a9cfa4;
 }
 string.key {
-    color: hsl(270, 80%, 80%);
+	color: #b798bf;
 }
 string-keyword {
-    color: hsl(30, 100%, 90%);
+	color: #f6e4b8;
 }
 string-template {
-    color: hsl(30, 100%, 70%);
+	color: #f6e4b8;
 }
 regex {
-    color: hsl(30, 100%, 70%);
+	color: #f6e4b8;
 }
 regex.escape {
-    color: hsl(30, 100%, 80%);
+	color: #f6e4b8;
 }
 cdata {
-    color: hsl(210, 100%, 70%);
+	color: #82afb1;
 }
 
 /* Markup */
+
 markup.heading {
-    color: hsl(27, 100%, 70%);
+	color: #a9c59e;
 }
 markup.line {
-    color: hsl(60, 43%, 56%);
+	color: #f6e4b8;
 }
 markup.bold {
-    color: hsl(196, 49%, 53%);
-    font-weight: bold;
+	color: #f6e4b8;
+	font-weight: bold;
 }
 markup.italic {
-    color: hsl(94, 44%, 64%);
-    font-style: italic;
+	color: #a9c59e;
+	font-style: italic;
 }
 markup.strikethrough {
-    color: hsl(210, 20%, 50%);
+	color: #7896c3;
 }
 markup.list.item {
-    color: hsl(27, 100%, 70%);
+	color: #f6e4b7;
 }
 markup.code {
-    background-color: rgba(128, 128, 128, 0.2);
+	background-color: rgba(128, 128, 128, 0.2);
 }
 markup.link {
-    color: hsl(210, 100%, 70%);
+	color: #d4d4d4;
 }
 
 /* Types */
+
 definition.class.name,
 definition.type.name,
 definition.package.name,
 definition.enum.name,
 definition.union.name,
 definition.struct.name {
-    
 }
 
 /* Members */
+
 definition.property.name {
 }
 definition.function.name,
 definition.method.name {
-    
 }
 
 /* Tags */
+
 tag {
-    color: hsl(160, 30%, 40%);
+	color: #7f7f7f;
 }
 tag.name {
-    color: hsl(160, 60%, 60%);
+	color: #7f7f7f;
 }
 tag.framework {
-    color: hsl(280, 30%, 50%);
+	color: #7f7f7f;
 }
 tag.framework.name {
-    color: hsl(280, 60%, 70%);
+	color: #d4d4d4;
 }
 tag.attribute.name {
-    color: hsl(100, 60%, 70%);
+	color: #d4d4d4;
 }
 tag.framework.attribute.name {
-    color: hsl(320, 60%, 70%);
+	color: #d4d4d4;
 }
 tag.attribute.value {
-    color: hsl(5, 80%, 65%);
+	color: #a9c59e;
 }
 tag.attribute.value.delimiter {
-    color: hsl(0, 80%, 60%);
+	color: #a9c59e;
 }
 tag.attribute.operator {
-    color: hsl(210, 50%, 70%);
+	color: #82afb1;
 }
 tag.attribute.value.link {
-    color: hsl(210, 100%, 70%);
+	color: #a9c59e;
 }
 
 /* Styles */
+
 style.at {
-    color: hsl(32, 90%, 70%);
-    font-weight: bold;
+	color: #7f7f7f;
+	font-weight: bold;
 }
 style.selector.element {
-    font-weight: bold;
+	color: #d4d4d4;
+	font-weight: bold;
 }
 style.selector.identifier.id {
-    color: hsl(32, 90%, 70%);
+	color: #d4d4d4;
 }
 style.selector.identifier.class {
-    color: hsl(100, 60%, 70%);
+	color: #d4d4d4;
 }
 style.selector.pseudoclass {
-    color: hsl(270, 80%, 80%);
+	color: #d4d4d4;
 }
 style.selector.pseudoelement {
-    color: hsl(32, 90%, 70%);
+	color: #d4d4d4;
 }
 style.attribute.name {
-    color: hsl(190, 85%, 65%);
+	color: #d4d4d4;
 }
 style.value.number {
-    color: hsl(45, 50%, 80%);
+	color: #81b0b2;
 }
 style.value.color.hex {
-    color: hsl(45, 50%, 80%);
+	color: #81b0b2;
 }
 style.value.keyword {
-    color: hsl(210, 100%, 70%);
+	color: #a9c59d;
 }
 style.value.color.named {
-    color: hsl(210, 100%, 70%);
+	color: #81b0b2;
 }
 style.value.identifier.function {
-    color: hsl(160, 80%, 55%);
+	color: #a9c59d;
+}
+
+/* Terminal */
+
+terminal.black {
+	color: hsl(60, 0%, 44%);
+}
+
+terminal.bright-black {
+	color: hsl(60, 0%, 44%);
+}
+
+terminal.red {
+	color: #d06163;
+}
+
+terminal.bright-red {
+	color: #d06163;
+}
+
+terminal.green {
+	color: #a2c699;
+}
+
+terminal.bright-green {
+	color: #a2c699;
+}
+
+terminal.yellow {
+	color: #fae3b2;
+}
+
+terminal.bright-yellow {
+	color: #fae3b2;
+}
+
+terminal.blue {
+	color: #6f97c7;
+}
+
+terminal.bright-blue {
+	color: #6f97c7;
+}
+
+terminal.magenta {
+	color: #be96c2;
+}
+
+terminal.bright-magenta {
+	color: #be96c2;
+}
+
+terminal.cyan {
+	color: #74b1b2;
+}
+
+terminal.bright-cyan {
+	color: #74b1b2;
 }
