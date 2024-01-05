@@ -1,7 +1,7 @@
 meta {
 	-theme-interface-style: dark;
 	-theme-vibrancy: none;
-	-theme-accent-color: hsl(225, 12%, 13%);
+	-theme-accent-color: #292c34;
 }
 
 /*
@@ -10,11 +10,11 @@ meta {
 
 meta.window {
 	border-color: hsla(0, 0%, 100%, 0.1);
-	background-color: hsla(218, 13%, 16%, 1);
+	background-color: #23272e;
 }
 meta.titlebar {
-	color: hsl(210, 17%, 76%);
-	background-color: hsl(225, 12%, 13%);
+	color: #b7c1cc;
+	background-color: #1d1f25;
 	border-color: hsla(0, 0%, 0%, 0);
 }
 meta.titlebar.inactive {
@@ -52,7 +52,7 @@ meta.textfield.highlighted {
  */
 
 meta.document {
-	background-color: hsla(223, 12%, 18%, 1);
+	background-color: #282c35;
 	border-color: hsla(0, 0%, 20%, 0.4);
 }
 
@@ -80,6 +80,9 @@ meta.document.textfield.highlighted {
 }
 
 /* Text */
+
+/* #414858 */
+
 meta.text {
 	color: #d4d4d4;
 }
@@ -87,7 +90,7 @@ meta.text.invisible {
 	color: hsla(210, 100%, 90%, 0.15);
 }
 meta.text.selected {
-	color: hsla(210, 100%, 90%, 0.15);
+	background-color: hsla(222, 15%, 30%, 0.8);
 }
 
 /* Cursor */
@@ -342,20 +345,20 @@ style.at {
 	font-weight: bold;
 }
 style.selector.element {
-	color: #d4d4d4;
+	color: #7f7f7f;
 	font-weight: bold;
 }
 style.selector.identifier.id {
-	color: #d4d4d4;
+	color: #7f7f7f;
 }
 style.selector.identifier.class {
-	color: #d4d4d4;
+	color: #7f7f7f;
 }
 style.selector.pseudoclass {
 	color: #d4d4d4;
 }
 style.selector.pseudoelement {
-	color: #d4d4d4;
+	color: #7f7f7f;
 }
 style.attribute.name {
 	color: #d4d4d4;
@@ -387,11 +390,11 @@ terminal.bright-black {
 }
 
 terminal.red {
-	color: #d06163;
+	color: #f0a5ab;
 }
 
 terminal.bright-red {
-	color: #d06163;
+	color: #f0a5ab;
 }
 
 terminal.green {

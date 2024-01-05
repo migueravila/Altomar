@@ -1,8 +1,13 @@
 {
-    "identifier": "org.altomar",
-    "name": "Altomar",
-    "organization": "MyOrganization",
-    "description": "Lorem ipsum, dolor sit amet.",
-    "version": "1.0",
-    "categories": ["themes"]
+	"identifier": "avila.altomar",
+	"name": "Altomar",
+	"organization": "Miguel Avila",
+	"description": "⛰️ Minimal yet colorful theme for Nova.",
+	"repository": "https://github.com/migueravila/Altomar",
+	"funding": "https://www.buymeacoffee.com/migueravila",
+	"bugs": {
+		"email": "miguel@avila.id"
+	},
+	"version": "1.1",
+	"categories": ["themes"]
 }
